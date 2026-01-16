@@ -22,4 +22,3 @@ function hesapla() {
             "Ortalama: " + ortalama.toFixed(2) + " → Kaldınız.";
     }
 }
-
