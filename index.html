@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Öğrenci Not Hesaplama</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<head>
-    <meta charset="UTF-8">
-    <title>Öğrenci Not Hesaplama</title>
 
-    <!-- BU SATIR OLMAK ZORUNDA -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
     <h1>Öğrenci Not Hesaplama</h1>
 
+    <!-- NOTLAR -->
     <input type="number" id="vize" placeholder="Vize Notu (0-100)">
+    <input type="number" id="vize2" placeholder="2. Vize Notu (Opsiyonel)">
+    <input type="number" id="quiz" placeholder="Quiz Notu (Opsiyonel)">
     <input type="number" id="final" placeholder="Final Notu (0-100)">
 
+    <!-- YÜZDELER -->
     <label>Vize Etki Yüzdesi</label>
     <select id="vizeYuzde">
         <option value="30">%30</option>
@@ -29,21 +27,46 @@
         <option value="50">%50</option>
         <option value="60">%60</option>
     </select>
-    <label>Final Etki Yüzdesi</label>
-<select id="finalYuzde">
+
+    <label>2. Vize Etki Yüzdesi</label>
+    <select id="vize2Yuzde">
+        <option value="">Seçiniz</option>
+        <option value="10">%10</option>
+        <option value="20">%20</option>
+        <option value="30">%30</option>
+        <option value="40">%40</option>
+        <option value="50">%50</option>
+        <option value="60">%60</option>
+    </select>
+
+    <label>Quiz Etki Yüzdesi</label>
+    <select id="quizWeight">
+    <option value="">Seçiniz</option>
+    <option value="10">%10</option>
+    <option value="20">%20</option>
+    <option value="30">%30</option>
     <option value="40">%40</option>
     <option value="50">%50</option>
-    <option value="60" selected>%60</option>
-    <option value="70">%70</option>
+    <option value="60">%60</option>
 </select>
 
 
+    <label>Final Etki Yüzdesi</label>
+    <select id="finalYuzde">
+        <option value="40">%40</option>
+        <option value="50">%50</option>
+        <option value="60" selected>%60</option>
+        <option value="70">%70</option>
+    </select>
+
     <button onclick="hesapla()">Hesapla</button>
+    <button id="darkModeBtn">Karanlık Mod</button>
+
+
 
     <p id="sonuc"></p>
 </div>
 
 <script src="script.js"></script>
-<div class="signature">glow</div>
 </body>
 </html>
