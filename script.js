@@ -39,13 +39,7 @@ function hesapla() {
         ortalama += (finall * finalYuzde) / 100;
     }
 
-    if (ortalama >= 60) {
-        sonuc.innerText =
-            "Ortalama: " + ortalama.toFixed(2) + " → Geçtiniz.";
-    } else {
-        sonuc.innerText =
-            "Ortalama: " + ortalama.toFixed(2) + " → Kaldınız.";
-    }
+    sonuc.innerText = "Ortalama: " + ortalama.toFixed(2);
 }
 const darkModeBtn = document.getElementById("darkModeBtn");
 
