@@ -1,24 +1,35 @@
-function hesapla() {
-    let vize = Number(document.getElementById("vize").value);
-    let finall = Number(document.getElementById("final").value);
-    let vizeYuzde = Number(document.getElementById("vizeYuzde").value);
-    let finalYuzde = Number(document.getElementById("finalYuzde").value);
-    let sonuc = document.getElementById("sonuc");
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
 
-    if (vize < 0 || vize > 100 || finall < 0 || finall > 100) {
-        sonuc.innerText = "Notlar 0-100 arasında olmalıdır.";
-        return;
-    }
+.container {
+    width: 320px;
+    margin: 80px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
 
-    let ortalama =
-        (vize * vizeYuzde / 100) +
-        (finall * finalYuzde / 100);
+input, select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+}
 
-    if (ortalama >= 60) {
-        sonuc.innerText =
-            "Ortalama: " + ortalama.toFixed(2) + " → Geçtiniz.";
-    } else {
-        sonuc.innerText =
-            "Ortalama: " + ortalama.toFixed(2) + " → Kaldınız.";
-    }
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.glow {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    opacity: 0.9;
+    user-select: none;
 }
