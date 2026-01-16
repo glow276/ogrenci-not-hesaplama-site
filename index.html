@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Öğrenci Not Hesaplama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Öğrenci Not Hesaplama</h1>
+
+    <input type="number" id="vize" placeholder="Vize Notu (0-100)">
+    <input type="number" id="final" placeholder="Final Notu (0-100)">
+
+    <label>Vize Etki Yüzdesi</label>
+    <select id="vizeYuzde">
+        <option value="30">%30</option>
+        <option value="40" selected>%40</option>
+        <option value="50">%50</option>
+        <option value="60">%60</option>
+    </select>
+
+    <p id="finalYuzdeText">Final Etki Yüzdesi: %60</p>
+
+    <button onclick="hesapla()">Hesapla</button>
+
+    <p id="sonuc"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
