@@ -23,7 +23,7 @@ button {
     cursor: pointer;
 }
 
-/* KARANLIK MOD TEMASI */
+/* Karanlık mod teması */
 body.dark-mode {
     background-color: #121212;
     color: #f5f5f5;
